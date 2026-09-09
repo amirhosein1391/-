@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مهر + | باشگاه آرامش و تندرستی</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+*{box-sizing:border-box}body{margin:0;font-family:Vazirmatn,Arial,sans-serif;background:#f5f1e8;color:#123b38}
+a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid #e8e1d5}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:23px}.logo-mark{width:42px;height:42px;border-radius:50% 50% 50% 10px;background:#0c4c48;color:#f6efdf;display:grid;place-items:center;font-size:23px}
+.links{display:flex;gap:25px;font-size:14px}.links a:hover{color:#0d7069}.btn{border:0;border-radius:28px;padding:12px 22px;background:#0c4c48;color:white;font-family:inherit;font-weight:700;cursor:pointer}
+.btn.light{background:#f7f0df;color:#0c4c48}.hero{min-height:610px;border-radius:0 0 28px 28px;overflow:hidden;position:relative;background:linear-gradient(90deg,rgba(5,40,37,.86),rgba(5,40,37,.18)),url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=85') center/cover}
+.hero-content{padding:145px 0 80px;color:white;max-width:560px}.hero h1{font-size:52px;line-height:1.25;margin:0 0 20px}.hero p{font-size:18px;line-height:2;margin-bottom:30px;color:#f4f1e8}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:-65px;position:relative}.feature{background:#fff;padding:22px;border-radius:18px;text-align:center;box-shadow:0 12px 35px #163d3820}.feature b{display:block;margin-top:8px}.section{padding:85px 0}.section-title{text-align:center;margin-bottom:35px}.section-title h2{font-size:34px;margin:0 0 10px}.section-title p{color:#687b78}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 8px 24px #163d3812}.card img{width:100%;height:175px;object-fit:cover}.card-body{padding:20px}.tag{display:inline-block;background:#e8f0e9;color:#24655f;border-radius:20px;padding:5px 10px;font-size:12px}.card h3{margin:12px 0 8px}.card p{font-size:13px;color:#71807e;line-height:1.9}.card .btn{width:100%;margin-top:8px}.cta{background:#dfe9dc;border-radius:28px;padding:55px;text-align:center;margin-bottom:80px}.cta h2{font-size:30px;margin:0 0 12px}.footer{background:#073a38;color:white;padding:45px 0}.footer-row{display:flex;justify-content:space-between;gap:30px}.footer small{color:#b9cbc7}
+.modal{display:none;position:fixed;inset:0;background:#082e2b99;z-index:50;place-items:center;padding:20px}.modal.show{display:grid}.modal-box{background:#fff;border-radius:24px;padding:30px;width:min(520px,100%);max-height:90vh;overflow:auto}.modal-head{display:flex;justify-content:space-between;align-items:center}.close{border:0;background:#edf2ed;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:20px}.form{display:grid;gap:14px;margin-top:20px}.form label{font-size:13px;font-weight:600}.form input,.form select{width:100%;padding:13px;border:1px solid #d8e0d8;border-radius:12px;font:inherit;background:#fafcf9}.success{display:none;background:#e4f2e5;padding:15px;border-radius:14px;margin-top:15px;color:#215c39}.dashboard{display:none;margin-top:25px}.dash-card{padding:18px;border-radius:16px;background:#f5f8f3;margin-top:10px}
+@media(max-width:850px){.links{display:none}.hero h1{font-size:38px}.features,.cards{grid-template-columns:repeat(2,1fr)}.footer-row{flex-direction:column}}
+@media(max-width:520px){.features,.cards{grid-template-columns:1fr}.hero{min-height:570px}.hero-content{padding-top:110px}.cta{padding:35px 20px}}
+
+.schedule-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
+.capacity{font-size:12px;color:#55716d;margin-top:5px}.capacity strong{color:#0c4c48}
+.admin-link{background:transparent;border:1px solid #cbd9d1;color:#0c4c48;padding:9px 14px;border-radius:20px;font:inherit;cursor:pointer}
+.admin-box{width:min(900px,100%);background:#fff;border-radius:24px;padding:28px;max-height:92vh;overflow:auto}
+.admin-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+.stat{background:#f3f7f2;border-radius:16px;padding:18px}.stat b{display:block;font-size:24px;margin-top:5px}
+.table-wrap{overflow:auto;border:1px solid #e2e9e3;border-radius:16px}
+table{width:100%;border-collapse:collapse;min-width:680px}th,td{padding:13px;text-align:right;border-bottom:1px solid #edf0ed;font-size:13px}th{background:#f5f8f4}
+.danger{background:#f8e9e7;color:#8d3930}.notice{background:#eef5ee;padding:13px;border-radius:12px;font-size:13px;margin-top:12px}
+@media(max-width:700px){.schedule-grid,.admin-grid{grid-template-columns:1fr 1fr}.admin-grid .stat{padding:12px}}
+</style>
+</head>
+<body>
+<header><nav class="container">
+<a class="logo" href="#"><span class="logo-mark">م+</span><span>مهر +</span></a>
+<div class="links"><a href="#home">خانه</a><a href="#classes">کلاس‌ها</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></div>
+<div style="display:flex;gap:8px;align-items:center"><button class="admin-link" onclick="openAdmin()">پنل مدیریت</button><button class="btn" onclick="openModal()">ثبت‌نام</button></div>
+</nav></header>
+
+<main id="home">
+<section class="hero"><div class="container hero-content">
+<h1>آرامش، قدرت واقعی توست</h1>
+<p>در باشگاه <b>مهر +</b> با مجموعه‌ای از کلاس‌های متنوع ورزشی، به تناسب اندام، قدرت و شادابی بیشتر برس.</p>
+<button class="btn light" onclick="document.querySelector('#classes').scrollIntoView({behavior:'smooth'})">مشاهده کلاس‌ها ←</button>
+</div></section>
+
+<div class="container features">
+<div class="feature">🌿<b>محیط آرام</b><small>برای تمرکز و آرامش</small></div>
+<div class="feature">🧘<b>مربی حرفه‌ای</b><small>آموزش مرحله‌به‌مرحله</small></div>
+<div class="feature">💚<b>برنامه متنوع</b><small>متناسب با سطح شما</small></div>
+<div class="feature">✨<b>تمرکز بر سلامت</b><small>جسم، ذهن و انعطاف</small></div>
+</div>
+
+<section class="section" id="classes"><div class="container">
+<div class="section-title"><h2>کلاس‌های مهر +</h2><p>کلاس مناسب خودت را انتخاب کن و برای شروع آماده شو.</p></div>
+<div class="cards">
+<article class="card"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="حرکات اصلاحی"><div class="card-body"><span class="tag">مهر +</span><h3>حرکات اصلاحی</h3><p>اصلاح الگوهای حرکتی، بهبود وضعیت بدن و تمرین‌های کنترل‌شده.</p><button class="btn" onclick="selectClass('حرکات اصلاحی')">ثبت‌نام در کلاس</button></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="پیلاتس"><div class="card-body"><span class="tag">مهر +</span><h3>پیلاتس</h3><p>تمرین‌های کنترل‌شده برای تقویت عضلات مرکزی، تعادل و انعطاف.</p><button class="btn" onclick="selectClass('پیلاتس')">ثبت‌نام در کلاس</button></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="چربی‌سوزی"><div class="card-body"><span class="tag">مهر +</span><h3>چربی‌سوزی</h3><p>تمرین‌های پرتحرک و برنامه‌ریزی‌شده برای افزایش فعالیت بدنی.</p><button class="btn" onclick="selectClass('چربی‌سوزی')">ثبت‌نام در کلاس</button></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d0b5?auto=format&fit=crop&w=800&q=80" alt="تی‌آر‌ایکس"><div class="card-body"><span class="tag">مهر +</span><h3>تی‌آر‌ایکس</h3><p>تمرین با وزن بدن برای تقویت، تعادل و استقامت.</p><button class="btn" onclick="selectClass('تی‌آر‌ایکس')">ثبت‌نام در کلاس</button></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1a?auto=format&fit=crop&w=800&q=80" alt="فیتنس"><div class="card-body"><span class="tag">مهر +</span><h3>فیتنس</h3><p>تمرین‌های متنوع برای آمادگی جسمانی، قدرت و استقامت.</p><button class="btn" onclick="selectClass('فیتنس')">ثبت‌نام در کلاس</button></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501f8?auto=format&fit=crop&w=800&q=80" alt="بانجی"><div class="card-body"><span class="tag">مهر +</span><h3>بانجی</h3><p>تمرین‌های بانجی برای افزایش نشاط، تحرک و آمادگی بدنی.</p><button class="btn" onclick="selectClass('بانجی')">ثبت‌نام در کلاس</button></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=800&q=80" alt="ایروبیک"><div class="card-body"><span class="tag">مهر +</span><h3>ایروبیک</h3><p>حرکات ریتمیک و پرتحرک برای افزایش نشاط و آمادگی بدنی.</p><button class="btn" onclick="selectClass('ایروبیک')">ثبت‌نام در کلاس</button></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="ایریال"><div class="card-body"><span class="tag">مهر +</span><h3>ایریال</h3><p>تمرین‌های ایریال با تأکید بر تعادل، انعطاف و کنترل بدن.</p><button class="btn" onclick="selectClass('ایریال')">ثبت‌نام در کلاس</button></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="یوگا"><div class="card-body"><span class="tag">مهر +</span><h3>یوگا</h3><p>تمرین‌های آرام برای افزایش انعطاف، تمرکز و آرامش ذهن.</p><button class="btn" onclick="selectClass('یوگا')">ثبت‌نام در کلاس</button></div></article>
+</div></div></section>
+
+<section class="container" id="about"><div class="cta"><h2>آماده‌ای برای شروع؟</h2><p>همین حالا در مهر + ثبت‌نام کن و اولین قدم را برای آرامش بیشتر بردار.</p><button class="btn" onclick="openModal()">ثبت‌نام در مهر +</button></div></section>
+</main>
+
+<footer class="footer" id="contact"><div class="container footer-row"><div><div class="logo">م+</div><p>باشگاه آرامش و تندرستی مهر +</p></div><div><b>ارتباط با ما</b><p>شنبه تا پنجشنبه | ۹ تا ۲۰</p><small>© ۲۰۲۶ مهر +</small></div></div></footer>
+
+<div class="modal" id="modal"><div class="modal-box">
+<div class="modal-head"><h2>ثبت‌نام در مهر +</h2><button class="close" onclick="closeModal()">×</button></div>
+<p>اطلاعاتت را وارد کن تا ثبت‌نامت انجام شود.</p>
+<form class="form" id="registerForm">
+<label>نام و نام خانوادگی<input id="name" required placeholder="مثلاً امیرحسین احمدی"></label>
+<label>شماره موبایل<input id="phone" required inputmode="tel" placeholder="09xxxxxxxxx"></label>
+<label>سن<input id="age" type="number" min="5" max="100" required placeholder="سن"></label>
+<label>کلاس موردنظر<select id="class" required><option value="">انتخاب کلاس</option><option>حرکات اصلاحی</option><option>پیلاتس</option><option>چربی‌سوزی</option><option>تی‌آر‌ایکس</option><option>فیتنس</option><option>بانجی</option><option>ایروبیک</option><option>ایریال</option><option>یوگا</option></select></label>
+<div class="schedule-grid">
+<label>روز کلاس<select id="day" required>
+<option value="">انتخاب روز</option><option>شنبه</option><option>یکشنبه</option><option>دوشنبه</option><option>سه‌شنبه</option><option>چهارشنبه</option><option>پنجشنبه</option><option>جمعه</option>
+</select></label>
+<label>ساعت کلاس<select id="time" required>
+<option value="">انتخاب ساعت</option><option>09:00</option><option>11:00</option><option>16:00</option><option>18:00</option><option>20:00</option>
+</select></label></div>
+<div class="notice">ظرفیت این سانس: <strong id="slotCapacity">10 نفر</strong> — ظرفیت با هر ثبت‌نام به‌صورت خودکار کم می‌شود.</div>
+<button class="btn" type="submit">تکمیل ثبت‌نام</button>
+</form>
+<div class="success" id="success"></div>
+<div class="dashboard" id="dashboard"><b>اطلاعات ثبت‌نام شما</b><div class="dash-card" id="dashText"></div></div>
+</div></div>
+<script>
+const modal=document.getElementById('modal');
+const adminModal=document.getElementById('adminModal');
+const CAPACITY=10;
+function openModal(){modal.classList.add('show');updateCapacity();}
+function closeModal(){modal.classList.remove('show');}
+function openAdmin(){adminModal.classList.add('show');renderAdmin();}
+function closeAdmin(){adminModal.classList.remove('show');}
+function selectClass(c){document.getElementById('class').value=c;openModal();}
+window.onclick=e=>{if(e.target===modal)closeModal();if(e.target===adminModal)closeAdmin();}
+
+function getRegs(){return JSON.parse(localStorage.getItem('mehrPlusRegistrations')||'[]');}
+function saveRegs(x){localStorage.setItem('mehrPlusRegistrations',JSON.stringify(x));}
+function slotKey(){return [document.getElementById('class').value,document.getElementById('day').value,document.getElementById('time').value].join('|');}
+function slotCount(key){return getRegs().filter(x=>x.slot===key).length;}
+function updateCapacity(){
+ const c=document.getElementById('slotCapacity');
+ const cls=document.getElementById('class').value, day=document.getElementById('day').value, time=document.getElementById('time').value;
+ if(cls&&day&&time){let left=Math.max(0,CAPACITY-slotCount([cls,day,time].join('|')));c.textContent=left+' نفر';}
+ else c.textContent='10 نفر';
+}
+document.getElementById('class').addEventListener('change',updateCapacity);
+document.getElementById('day').addEventListener('change',updateCapacity);
+document.getElementById('time').addEventListener('change',updateCapacity);
+
+document.getElementById('registerForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const data={id:Date.now(),name:document.getElementById('name').value.trim(),phone:document.getElementById('phone').value.trim(),age:document.getElementById('age').value,cls:document.getElementById('class').value,day:document.getElementById('day').value,time:document.getElementById('time').value};
+ data.slot=[data.cls,data.day,data.time].join('|');
+ let regs=getRegs();
+ if(slotCount(data.slot)>=CAPACITY){alert('این سانس تکمیل شده است. لطفاً روز یا ساعت دیگری انتخاب کنید.');return;}
+ regs.push(data);saveRegs(regs);
+ document.getElementById('success').style.display='block';
+ document.getElementById('success').textContent='ثبت‌نام شما با موفقیت انجام شد 🌿';
+ document.getElementById('dashboard').style.display='block';
+ document.getElementById('dashText').innerHTML=`${data.name}<br>کلاس: ${data.cls}<br>روز: ${data.day} | ساعت: ${data.time}`;
+ updateCapacity();
+});
+
+function renderAdmin(){
+ const regs=getRegs();
+ document.getElementById('totalReg').textContent=regs.length;
+ document.getElementById('filledSlots').textContent=regs.length;
+ document.getElementById('remainingSlots').textContent=Math.max(0,(9*7*5*CAPACITY)-regs.length);
+ const tbody=document.getElementById('regTable');
+ tbody.innerHTML=regs.length?regs.map((r,i)=>`<tr><td>${r.name}</td><td>${r.phone}</td><td>${r.cls}</td><td>${r.day}</td><td>${r.time}</td><td><button class="admin-link" onclick="removeReg(${i})">حذف</button></td></tr>`).join(''):'<tr><td colspan="6" style="text-align:center;padding:25px">هنوز ثبت‌نامی وجود ندارد.</td></tr>';
+}
+function removeReg(i){let regs=getRegs();regs.splice(i,1);saveRegs(regs);renderAdmin();updateCapacity();}
+function clearRegistrations(){if(confirm('همه ثبت‌نام‌ها حذف شوند؟')){localStorage.removeItem('mehrPlusRegistrations');renderAdmin();updateCapacity();}}
+</script>
+
+<div class="modal" id="adminModal"><div class="admin-box">
+<div class="modal-head"><h2>پنل مدیریت مهر +</h2><button class="close" onclick="closeAdmin()">×</button></div>
+<p>مدیریت ثبت‌نام‌ها و ظرفیت کلاس‌ها در همین مرورگر.</p>
+<div class="admin-grid">
+<div class="stat">کل ثبت‌نام‌ها<b id="totalReg">0</b></div>
+<div class="stat">ظرفیت پرشده<b id="filledSlots">0</b></div>
+<div class="stat">ظرفیت باقی‌مانده<b id="remainingSlots">0</b></div>
+<div class="stat">کلاس‌های فعال<b>9</b></div>
+</div>
+<div class="table-wrap"><table><thead><tr><th>نام</th><th>موبایل</th><th>کلاس</th><th>روز</th><th>ساعت</th><th>عملیات</th></tr></thead>
+<tbody id="regTable"></tbody></table></div>
+<div style="display:flex;gap:10px;margin-top:18px"><button class="btn danger" onclick="clearRegistrations()">حذف همه ثبت‌نام‌ها</button><button class="btn" onclick="closeAdmin()">بستن</button></div>
+</div></div>
+</body></html>
